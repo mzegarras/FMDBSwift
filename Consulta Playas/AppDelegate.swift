@@ -10,12 +10,65 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    let DATABASE_RESOURCE_NAME = "portalesdb"
+    let DATABASE_RESOURCE_TYPE = "sqlite"
+    let DATABASE_FILE_NAME = "portalesdb.sqlite"
+    
     var window: UIWindow?
+    
+    var dbFilePath: String = String()
+    
+    
+    func initializeDB()->Bool{
+        
+        var rp = false;
+        
+        let documentFolderPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        let dbfile = "/" + DATABASE_FILE_NAME;
+        self.dbFilePath = documentFolderPath.stringByAppendingString(dbfile)
 
+        let filemanager = NSFileManager.defaultManager()
+        
+        print(dbFilePath)
+        
+        if (!filemanager.fileExistsAtPath(dbFilePath) ) {
+            
+            let backupDbPath = NSBundle.mainBundle().pathForResource(DATABASE_RESOURCE_NAME, ofType: DATABASE_RESOURCE_TYPE)
+            
+            if (backupDbPath == nil) {
+                rp = false
+            } else {
 
+                do{
+                    
+                    try filemanager.copyItemAtPath(backupDbPath!, toPath:dbFilePath)
+                    
+                    //if copySuccessful {
+                        //print("copy failed: \(error?.localizedDescription)")
+                        rp = true
+                    //}
+                    
+                    
+                }catch{
+                        rp = false
+                }
+            }
+            
+        }
+        return rp
+        
+    }
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if self.initializeDB() {
+            NSLog("Successful db copy")
+        }else{
+                NSLog("Error db copy")
+        }
+        
         return true
     }
 

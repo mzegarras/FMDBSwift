@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F464EBF678F4C59A48FF7B9 /* Pods_Consulta_Playas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6E97BD5E17220758838A88 /* Pods_Consulta_Playas.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C83511A71BB8D0C700F6BD9D /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C83511A61BB8D0C700F6BD9D /* libz.1.dylib */; };
+		C83511A91BB8D0DD00F6BD9D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C83511A81BB8D0DD00F6BD9D /* libsqlite3.dylib */; };
+		C83511B01BB8DCB900F6BD9D /* portalesdb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C83511AF1BB8DAD700F6BD9D /* portalesdb.sqlite */; };
+		C83511B41BB9039D00F6BD9D /* Parametro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83511B31BB9039D00F6BD9D /* Parametro.swift */; settings = {ASSET_TAGS = (); }; };
+		C83511B61BB9089D00F6BD9D /* ListadoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83511B51BB9089D00F6BD9D /* ListadoController.swift */; settings = {ASSET_TAGS = (); }; };
 		C85C68011BB8BD5C00F53723 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85C68001BB8BD5C00F53723 /* AppDelegate.swift */; };
 		C85C68031BB8BD5C00F53723 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85C68021BB8BD5C00F53723 /* ViewController.swift */; };
 		C85C68061BB8BD5C00F53723 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85C68041BB8BD5C00F53723 /* Main.storyboard */; };
@@ -15,6 +21,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D6E97BD5E17220758838A88 /* Pods_Consulta_Playas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Consulta_Playas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA2B7BD887F8440DE685954 /* Pods-Consulta Playas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Consulta Playas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Consulta Playas/Pods-Consulta Playas.debug.xcconfig"; sourceTree = "<group>"; };
+		6F099777963F6B15944B9413 /* Pods-Consulta Playas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Consulta Playas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Consulta Playas/Pods-Consulta Playas.release.xcconfig"; sourceTree = "<group>"; };
+		C83511A61BB8D0C700F6BD9D /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		C83511A81BB8D0DD00F6BD9D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		C83511AF1BB8DAD700F6BD9D /* portalesdb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = portalesdb.sqlite; sourceTree = "<group>"; };
+		C83511B21BB8E61200F6BD9D /* FMDB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FMDB-Bridging-Header.h"; sourceTree = "<group>"; };
+		C83511B31BB9039D00F6BD9D /* Parametro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parametro.swift; sourceTree = "<group>"; };
+		C83511B51BB9089D00F6BD9D /* ListadoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListadoController.swift; sourceTree = "<group>"; };
+		C84A8E081BB8CF72008BBC9F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		C85C67FD1BB8BD5C00F53723 /* Consulta Playas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Consulta Playas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85C68001BB8BD5C00F53723 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C85C68021BB8BD5C00F53723 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +45,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83511A91BB8D0DD00F6BD9D /* libsqlite3.dylib in Frameworks */,
+				C83511A71BB8D0C700F6BD9D /* libz.1.dylib in Frameworks */,
+				6F464EBF678F4C59A48FF7B9 /* Pods_Consulta_Playas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79F952AA09D77A9741857F8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DA2B7BD887F8440DE685954 /* Pods-Consulta Playas.debug.xcconfig */,
+				6F099777963F6B15944B9413 /* Pods-Consulta Playas.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC2E66587BC69449477EFBA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C83511A81BB8D0DD00F6BD9D /* libsqlite3.dylib */,
+				C83511A61BB8D0C700F6BD9D /* libz.1.dylib */,
+				C84A8E081BB8CF72008BBC9F /* libsqlite3.0.tbd */,
+				4D6E97BD5E17220758838A88 /* Pods_Consulta_Playas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C83511AD1BB8DA9700F6BD9D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C83511AE1BB8DAA300F6BD9D /* DataBase */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C83511AE1BB8DAA300F6BD9D /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				C83511AF1BB8DAD700F6BD9D /* portalesdb.sqlite */,
+			);
+			name = DataBase;
+			sourceTree = "<group>";
+		};
 		C85C67F41BB8BD5B00F53723 = {
 			isa = PBXGroup;
 			children = (
+				C83511AD1BB8DA9700F6BD9D /* Resources */,
 				C85C67FF1BB8BD5C00F53723 /* Consulta Playas */,
 				C85C67FE1BB8BD5C00F53723 /* Products */,
+				79F952AA09D77A9741857F8A /* Pods */,
+				BC2E66587BC69449477EFBA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +118,9 @@
 				C85C68071BB8BD5C00F53723 /* Assets.xcassets */,
 				C85C68091BB8BD5C00F53723 /* LaunchScreen.storyboard */,
 				C85C680C1BB8BD5C00F53723 /* Info.plist */,
+				C83511B21BB8E61200F6BD9D /* FMDB-Bridging-Header.h */,
+				C83511B31BB9039D00F6BD9D /* Parametro.swift */,
+				C83511B51BB9089D00F6BD9D /* ListadoController.swift */,
 			);
 			path = "Consulta Playas";
 			sourceTree = "<group>";
@@ -71,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C85C680F1BB8BD5C00F53723 /* Build configuration list for PBXNativeTarget "Consulta Playas" */;
 			buildPhases = (
+				7F13006EABF8C48712683D05 /* Check Pods Manifest.lock */,
 				C85C67F91BB8BD5C00F53723 /* Sources */,
 				C85C67FA1BB8BD5C00F53723 /* Frameworks */,
 				C85C67FB1BB8BD5C00F53723 /* Resources */,
+				38A003364D26EAB3AF7709A7 /* Embed Pods Frameworks */,
+				1FFDB2B97A5CE714A04A4470 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -121,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83511B01BB8DCB900F6BD9D /* portalesdb.sqlite in Resources */,
 				C85C680B1BB8BD5C00F53723 /* LaunchScreen.storyboard in Resources */,
 				C85C68081BB8BD5C00F53723 /* Assets.xcassets in Resources */,
 				C85C68061BB8BD5C00F53723 /* Main.storyboard in Resources */,
@@ -129,6 +194,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FFDB2B97A5CE714A04A4470 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Consulta Playas/Pods-Consulta Playas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38A003364D26EAB3AF7709A7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Consulta Playas/Pods-Consulta Playas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F13006EABF8C48712683D05 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C85C67F91BB8BD5C00F53723 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -136,6 +249,8 @@
 			files = (
 				C85C68031BB8BD5C00F53723 /* ViewController.swift in Sources */,
 				C85C68011BB8BD5C00F53723 /* AppDelegate.swift in Sources */,
+				C83511B61BB9089D00F6BD9D /* ListadoController.swift in Sources */,
+				C83511B41BB9039D00F6BD9D /* Parametro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,23 +361,33 @@
 		};
 		C85C68101BB8BD5C00F53723 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DA2B7BD887F8440DE685954 /* Pods-Consulta Playas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Consulta Playas/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.msonic.Consulta-Playas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "./Consulta Playas/FMDB-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
 		C85C68111BB8BD5C00F53723 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F099777963F6B15944B9413 /* Pods-Consulta Playas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Consulta Playas/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.msonic.Consulta-Playas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "./Consulta Playas/FMDB-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
 		};
@@ -285,6 +410,7 @@
 				C85C68111BB8BD5C00F53723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
